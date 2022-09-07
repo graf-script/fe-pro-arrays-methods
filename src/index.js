@@ -66,13 +66,13 @@ const rangeFilter = (from, to) => {
 
 const minPriceReducer = () => {
   return goods.reduce((accum, currentValue) => {
-    return Math.min(accum, currentValue.price)
+    return Math.min(accum, currentValue.price);
   }, Infinity);
 };
 
 const maxPriceReducer = () => {
   return goods.reduce((accum, currentValue) => {
-    return Math.max(accum, currentValue.price)
+    return Math.max(accum, currentValue.price);
   }, -Infinity);
 };
 
